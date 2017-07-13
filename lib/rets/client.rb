@@ -243,7 +243,7 @@ module Rets
 
     def fetch_object(object_id, opts = {})
       params = {
-        "Resource" => opts.fetch(:resource),
+        "Resource" => opts.fetch("resource"),
         "Type"     => opts.fetch(:object_type),
         "ID"       => "#{opts.fetch(:resource_id)}:#{object_id}",
         "Location" => opts.fetch(:location, 0)
